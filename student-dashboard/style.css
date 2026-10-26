@@ -1,0 +1,299 @@
+/* General page styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6fb;
+    color: #20243a;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    padding: 0 28px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e6ef;
+    z-index: 10;
+}
+
+.logo {
+    display: inline-block;
+    margin: 0;
+    line-height: 70px;
+    color: #3949ab;
+    vertical-align: middle;
+}
+
+.top-nav {
+    display: inline-block;
+    margin-left: 60px;
+    vertical-align: middle;
+}
+
+.top-nav a {
+    display: inline-block;
+    margin-right: 24px;
+    color: #555d75;
+    text-decoration: none;
+}
+
+.top-nav a:hover,
+.sidebar a:hover {
+    color: #3949ab;
+}
+
+.profile {
+    position: absolute;
+    top: 25px;
+    right: 28px;
+    color: #555d75;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    bottom: 0;
+    width: 220px;
+    padding: 24px 18px;
+    background-color: #ffffff;
+    border-right: 1px solid #e2e6ef;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    color: #858ba0;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.sidebar a {
+    display: block;
+    padding: 13px 12px;
+    margin-bottom: 6px;
+    color: #555d75;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.sidebar a:first-of-type {
+    background-color: #edf0ff;
+    color: #3949ab;
+}
+
+/* Main content */
+.main-content {
+    margin-left: 220px;
+    padding: 100px 30px 40px;
+}
+
+.main-content > h1 {
+    margin-bottom: 8px;
+}
+
+.main-content > p {
+    margin-top: 0;
+    color: #777f95;
+}
+
+/* Statistics cards */
+.stats {
+    margin: 28px -10px;
+}
+
+.stat-card {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: calc(25% - 22px);
+    min-height: 145px;
+    margin: 0 10px 18px;
+    padding: 22px;
+    background-color: #ffffff;
+    border: 1px solid #e6e9f2;
+    border-radius: 12px;
+}
+
+.stat-card h3 {
+    margin: 8px 0 14px;
+    color: #737b91;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.number {
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.badge {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    padding: 5px 8px;
+    background-color: #e4f8ed;
+    color: #218653;
+    border-radius: 20px;
+    font-size: 11px;
+}
+
+/* Assignments */
+.assignments,
+.course-progress {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(60% - 18px);
+    margin-right: 18px;
+    padding: 24px;
+    background-color: #ffffff;
+    border: 1px solid #e6e9f2;
+    border-radius: 12px;
+}
+
+.assignments h2,
+.course-progress h2 {
+    margin-top: 0;
+    font-size: 19px;
+}
+
+.assignment {
+    position: relative;
+    padding: 15px 110px 15px 0;
+    border-bottom: 1px solid #edf0f5;
+}
+
+.assignment:last-child {
+    border-bottom: none;
+}
+
+.assignment h3 {
+    margin: 0 0 7px;
+    font-size: 15px;
+}
+
+.assignment p {
+    margin: 0;
+    color: #7a8297;
+    font-size: 13px;
+}
+
+.status {
+    position: absolute;
+    top: 22px;
+    right: 0;
+    color: #5b62b7;
+    font-size: 12px;
+}
+
+/* Course progress */
+.course-progress {
+    width: calc(40% - 18px);
+    margin-right: 0;
+}
+
+.course p {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 9px;
+    overflow: hidden;
+    background-color: #edf0f6;
+    border-radius: 10px;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.html-progress {
+    width: 85%;
+    background-color: #5665d8;
+}
+
+.css-progress {
+    width: 65%;
+    background-color: #20a879;
+}
+
+.js-progress {
+    width: 40%;
+    background-color: #e5a33d;
+}
+
+/* Fixed help button */
+.help-button {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    padding: 13px 22px;
+    border: none;
+    border-radius: 25px;
+    background-color: #3949ab;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 5px 16px rgba(35, 45, 120, 0.25);
+}
+
+.help-button:hover {
+    background-color: #283593;
+}
+
+/* Responsive layout */
+@media (max-width: 1100px) {
+    .stat-card {
+        width: calc(50% - 22px);
+    }
+
+    .assignments,
+    .course-progress {
+        width: 100%;
+        margin: 0 0 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .header {
+        padding: 0 16px;
+    }
+
+    .top-nav {
+        display: none;
+    }
+
+    .profile {
+        right: 16px;
+        font-size: 13px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 95px 16px 35px;
+    }
+
+    .stat-card {
+        width: calc(100% - 20px);
+    }
+
+    .assignments,
+    .course-progress {
+        padding: 18px;
+    }
+}
