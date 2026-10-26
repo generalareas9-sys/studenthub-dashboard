@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h2 class="logo">StudentHub</h2>
+        <nav class="top-nav">
+            <a href="#">Dashboard</a>
+            <a href="#">Courses</a>
+            <a href="#">Assignments</a>
+        </nav>
+        <div class="profile">
+            <span>Welcome, Student</span>
+        </div>
+    </header>
+
+    <aside class="sidebar">
+        <h3>Menu</h3>
+        <a href="#">Dashboard</a>
+        <a href="#">My Courses</a>
+        <a href="#">Assignments</a>
+        <a href="#">Grades</a>
+        <a href="#">Settings</a>
+    </aside>
+
+    <main class="main-content">
+        <h1>Dashboard</h1>
+        <p>Welcome back! Here is your learning overview.</p>
+
+        <section class="stats">
+            <div class="stat-card">
+                <span class="badge">Active</span>
+                <h3>Total Courses</h3>
+                <p class="number">6</p>
+            </div>
+            <div class="stat-card">
+                <h3>Assignments</h3>
+                <p class="number">12</p>
+            </div>
+            <div class="stat-card">
+                <h3>Completed</h3>
+                <p class="number">8</p>
+            </div>
+            <div class="stat-card">
+                <h3>Average Grade</h3>
+                <p class="number">85%</p>
+            </div>
+        </section>
+
+        <section class="assignments">
+            <h2>Upcoming Assignments</h2>
+            <div class="assignment">
+                <h3>HTML Project</h3>
+                <p>Due: October 28, 2026</p>
+                <span class="status">Pending</span>
+            </div>
+            <div class="assignment">
+                <h3>CSS Practice</h3>
+                <p>Due: October 30, 2026</p>
+                <span class="status">In Progress</span>
+            </div>
+            <div class="assignment">
+                <h3>JavaScript Exercise</h3>
+                <p>Due: November 2, 2026</p>
+                <span class="status">Not Started</span>
+            </div>
+        </section>
+
+        <section class="course-progress">
+            <h2>Course Progress</h2>
+            <div class="course">
+                <p>HTML</p>
+                <div class="progress-bar">
+                    <div class="progress html-progress"></div>
+                </div>
+            </div>
+            <div class="course">
+                <p>CSS</p>
+                <div class="progress-bar">
+                    <div class="progress css-progress"></div>
+                </div>
+            </div>
+            <div class="course">
+                <p>JavaScript</p>
+                <div class="progress-bar">
+                    <div class="progress js-progress"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button class="help-button">Help</button>
+</body>
+</html>
